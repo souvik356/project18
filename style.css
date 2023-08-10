@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 13vw;
+    width: 100%;
+    height: 80px;
+    border: 1px solid#000;
+    background-color: lightblue;
+}
+#nav #headnav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nav #headnav h1{
+    color: blueviolet;
+    font-size: 2vw;
+    letter-spacing: .2vw;
+}
+#nav #headnav h6{
+    font-size: .8vw;
+   font-weight: 400;
+   letter-spacing: .1vw;
+}
+#navlinks{
+    display: flex;
+    gap: 1.8vw;
+}
+#navlinks a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: #000;
+}
+#content{
+    width: 100%;
+    height: calc(100% - 80px);
+    position: relative;
+    display: flex;
+}
+#left{
+    background-color: lightblue;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+#lcontent{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 50%;
+}
+#lcontent h1 span{
+    color: blueviolet;
+    font-size: 12vw;
+    font-weight: 500;
+}
+#lcontent h1{
+    font-weight: 500;
+    font-size: 2vw;
+}
+#lcontent p{
+    font-size: 1vw;
+    line-height: 1.2;
+    margin-bottom: 1vw;
+}
+#lcontent button{
+    padding: 0.8vw 1.9vw;
+    border-radius: 15px;
+    background-color: rgb(225, 74, 74);
+    border: none;
+}
+#lcontent button:hover{
+    background-color: transparent;
+    color: red;
+    border: 1px solid#000;
+}
+#ltext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 20vw;
+    height: 3.9vw;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    background-color: blueviolet;
+}
+#ltext h3{
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: white;
+}
+#ltext h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: white;
+}
+#ltext h4 i{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+#navlinks i{
+    display: none;
+}
+#right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1653849942524-ef2c6882d70d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center;
+}
+@media(max-width:500px){
+    #nav{
+        height: 60px;
+        padding: 0 5vw;
+    }
+    #nav #headnav h1{
+        font-size: 5vw;
+        letter-spacing: 0.1vw;
+    }
+    #nav #headnav h6{
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+    }
+    #navlinks a{
+        display: none;
+    }
+    #navlinks i{
+        display: inline;
+    }
+    #content{
+        flex-direction: column;
+    }
+    #content #left{
+        width: 100%;
+        height: 50%;
+    }
+    #lcontent h1 span{
+       font-size: 15vw;
+    }
+    #lcontent h1{
+        font-size: 5vw;
+    }
+    #lcontent p{
+        font-size: 2.4vw;
+        margin-top: 0.8vw;
+        margin-bottom: 1vw;
+    }
+    #lcontent button{
+        padding: 0.9vw 0.9vw;
+        font-size: 2.5vw;
+    }
+    #content #right{
+        width: 100%;
+        height: 50%;
+    }
+    #ltext{
+        width: 30vw;
+        height: 7.9vw;
+        left: 31%;
+        bottom: 20%;
+    }
+    #ltext h3{
+        font-size: 2vw;
+    }
+    #ltext h4{
+        font-size: 1.9vw;
+    }
+}
